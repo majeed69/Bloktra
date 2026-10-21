@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icons/icon-128.png" width="96" alt="Bloktra logo">
+  <img src="assets/icons/icon-128.png" width="96" alt="Bloktra ad blocker logo">
 </p>
 
 <h1 align="center">Bloktra</h1>
@@ -7,8 +7,8 @@
 <p align="center"><b>Your browser. Your rules.</b></p>
 
 <p align="center">
-  A free, open source ad and tracker blocker for Chrome, Edge, Brave and other Chromium browsers.<br>
-  Built on Manifest V3. No accounts, no telemetry, no "acceptable ads".
+  A free, open source ad blocker and tracker blocker for Chrome, Edge, Brave and other Chromium browsers.<br>
+  Built on Manifest V3, with uBlock Origin and Adblock Plus filter support. No accounts, no telemetry, no "acceptable ads".
 </p>
 
 ---
@@ -31,7 +31,7 @@ Most ad blockers either got heavier over the years or quietly started letting so
 
 - Pause on any site with one click, or manage a full allowlist
 - Hide anything on a page with the element picker (popup, right-click menu, or <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>)
-- Write your own rules in Adblock Plus syntax, with live validation
+- Write your own rules in Adblock Plus or uBlock Origin syntax, with live validation
 - Subscribe to any filter list by URL, updated daily
 - Back up and restore your settings
 - Light and dark themes
@@ -113,6 +113,28 @@ d3host.adblock         bundled copy of the Turtlecute list
 ## Privacy
 
 Bloktra doesn't collect anything. There's no analytics, no account and no server. Your settings, stats and filters live in your browser's local storage. The only network requests it makes on its own are to download filter list updates, and only for lists you've subscribed to.
+
+## FAQ
+
+### Is Bloktra a uBlock Origin alternative for Manifest V3?
+
+Bloktra is built for Manifest V3 from the ground up and reads uBlock Origin and Adblock Plus filter syntax, including procedural filters like `:has-text()` and `:upward()`. Scriptlets (`##+js()`) aren't supported yet, so a few sites may show more than they would with uBlock Origin.
+
+### Does it work on Edge, Brave and Opera?
+
+Yes. It works in any Chromium browser running version 121 or newer. Firefox and Safari aren't supported.
+
+### Does it allow "acceptable ads"?
+
+No. Nothing gets let through.
+
+### Does it collect any data?
+
+No. See [Privacy](#privacy).
+
+### Can I add my own filter lists?
+
+Yes. Subscribe to any list by URL, or write your own rules.
 
 ## Contributing
 
