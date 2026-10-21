@@ -1,0 +1,113 @@
+{
+  "manifest_version": 3,
+  "name": "Bloktra: Ad & Tracker Blocker",
+  "short_name": "Bloktra",
+  "version": "4.0.0",
+  "description": "Your browser. Your rules. A fast, free ad and tracker blocker with cosmetic filtering, per-site controls and live block counts.",
+  "minimum_chrome_version": "121",
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "unlimitedStorage",
+    "alarms",
+    "scripting",
+    "contextMenus",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Bloktra",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png"
+    }
+  },
+  "options_ui": {
+    "page": "dashboard/dashboard.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      }
+    },
+    "pick-element": {
+      "suggested_key": {
+        "default": "Alt+Shift+E"
+      },
+      "description": "Hide an element on this page"
+    }
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "easylist",
+        "enabled": true,
+        "path": "rulesets/easylist.json"
+      },
+      {
+        "id": "easyprivacy",
+        "enabled": true,
+        "path": "rulesets/easyprivacy.json"
+      },
+      {
+        "id": "peterlowe",
+        "enabled": true,
+        "path": "rulesets/peterlowe.json"
+      },
+      {
+        "id": "d3host",
+        "enabled": true,
+        "path": "rulesets/d3host.json"
+      },
+      {
+        "id": "cookies",
+        "enabled": false,
+        "path": "rulesets/cookies.json"
+      },
+      {
+        "id": "annoyances",
+        "enabled": false,
+        "path": "rulesets/annoyances.json"
+      },
+      {
+        "id": "stevenblack",
+        "enabled": false,
+        "path": "rulesets/stevenblack.json"
+      },
+      {
+        "id": "urlcleaner",
+        "enabled": true,
+        "path": "rulesets/urlcleaner.json"
+      }
+    ]
+  }
+}

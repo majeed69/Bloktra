@@ -1,0 +1,53 @@
+{
+  "built": "2026-10-21T15:06:11.270Z",
+  "lists": {
+    "easylist": {
+      "rules": 3750,
+      "filters": 56662,
+      "cosmetic": 30966,
+      "version": "202610211448"
+    },
+    "easyprivacy": {
+      "rules": 9117,
+      "filters": 56301,
+      "cosmetic": 2,
+      "version": "202610211501"
+    },
+    "peterlowe": {
+      "rules": 2,
+      "filters": 3557,
+      "cosmetic": 0,
+      "version": "Tue, 20 Oct 2026 14:25:40 GMT"
+    },
+    "d3host": {
+      "rules": 3,
+      "filters": 116,
+      "cosmetic": 1,
+      "version": "17/3/2026"
+    },
+    "cookies": {
+      "rules": 1790,
+      "filters": 2105,
+      "cosmetic": 33898,
+      "version": "2026-10-21 14:25 UTC"
+    },
+    "annoyances": {
+      "rules": 3202,
+      "filters": 4138,
+      "cosmetic": 69460,
+      "version": "202610211425"
+    },
+    "stevenblack": {
+      "rules": 23,
+      "filters": 39761,
+      "cosmetic": 6,
+      "version": "18 October 2026 19:09:16 (UTC)"
+    },
+    "urlcleaner": {
+      "rules": 6,
+      "filters": 6,
+      "cosmetic": 0,
+      "version": ""
+    }
+  }
+}
