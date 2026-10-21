@@ -42,7 +42,7 @@ Bloktra isn't on the Chrome Web Store yet, so for now you load it by hand. It ta
 
 1. Download this repo. Either clone it:
    ```sh
-   git clone https://github.com/YOUR-USERNAME/bloktra.git
+   git clone https://github.com/majeed69/Bloktra.git
    ```
    or click **Code > Download ZIP** on GitHub and unzip it somewhere you won't delete by accident.
 2. Open `chrome://extensions` (or `edge://extensions`, `brave://extensions`).
